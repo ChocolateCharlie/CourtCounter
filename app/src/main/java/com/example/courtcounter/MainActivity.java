@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
     public void addOneForTeamB (View view) {
         scoreTeamB = scoreTeamB + 1;
 
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
 /**
@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     public void addTwoForTeamB (View view) {
         scoreTeamB = scoreTeamB + 2;
 
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 
 /**
@@ -145,6 +145,6 @@ public class MainActivity extends AppCompatActivity {
     public void addThreeForTeamB (View view) {
         scoreTeamB = scoreTeamB + 3;
 
-        displayForTeamA(scoreTeamB);
+        displayForTeamB(scoreTeamB);
     }
 }

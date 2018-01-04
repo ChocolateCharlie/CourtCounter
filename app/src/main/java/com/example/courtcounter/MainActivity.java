@@ -25,6 +25,8 @@ import com.example.courtcounter.R;
  */
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;     /* score of the team A */
+
 /**
  * onCreate
  * @param savedInstanceState

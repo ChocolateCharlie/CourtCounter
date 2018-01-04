@@ -10,7 +10,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.courtcounter.MainActivity">
+    tools:context="com.example.courtcounter.MainActivity" >
 
 <!-- Name of the team -->
     <TextView
@@ -18,35 +18,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="4dp"
-        android:gravity="center"/>
+        android:gravity="center" />
 
 <!-- Current score -->
     <TextView
+        android:id="@+id/team_a_score"
         android:text="0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="4dp"
-        android:gravity="center"/>
+        android:gravity="center" />
 
 <!-- +3 button -->
     <Button
         android:text="+3 points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp"
+        android:onClick="addThreeForTeamA" />
 
 <!-- +2 button -->
     <Button
         android:text="+2 points"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp"
+        android:onClick="addTwoForTeamA" />
 
 <!-- +1 button -->
     <Button
         android:text="Free throw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp" />
+        android:layout_margin="8dp"
+        android:onClick="addOneForTeamA" />
 
 </LinearLayout>

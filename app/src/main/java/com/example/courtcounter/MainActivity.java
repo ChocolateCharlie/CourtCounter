@@ -77,6 +77,8 @@ public class MainActivity extends AppCompatActivity {
  * Display 3
  */
     public void addThreeForTeamA (View view) {
-        displayForTeamA(3);
+        scoreTeamA = scoreTeamA + 3;
+
+        displayForTeamA(scoreTeamA);
     }
 }

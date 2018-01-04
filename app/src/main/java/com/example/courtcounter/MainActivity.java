@@ -10,6 +10,7 @@ package com.example.courtcounter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.TextView;
 
@@ -26,6 +27,7 @@ import com.example.courtcounter.R;
 public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;     /* score of the team A */
+    int scoreTeamB = 0;     /* score of the team B */
 
 /**
  * onCreate
@@ -39,6 +41,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+        /* ************************************ */
+        /*          DISPLAY METHODS             */
+        /* ************************************ */
+
 /**
  * displayForTeamA
  * @param score
@@ -51,10 +57,25 @@ public class MainActivity extends AppCompatActivity {
     }
 
 /**
+ * displayForTeamB
+ * @param score
+ *
+ * Displays the given score for Team B.
+ */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+        /* ************************************ */
+        /*          SCORE TEAM A METHODS        */
+        /* ************************************ */
+
+/**
  * addOneForTeamA
  * @param view
  *
- * Display 1
+ * Add 1 point to team A
  */
     public void addOneForTeamA (View view) {
         scoreTeamA = scoreTeamA + 1;
@@ -66,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
  * addTwoForTeamA
  * @param view
  *
- * Display 2
+ * Add 2 points to team A
  */
     public void addTwoForTeamA (View view) {
         scoreTeamA = scoreTeamA + 2;
@@ -78,11 +99,52 @@ public class MainActivity extends AppCompatActivity {
 /**
  * addThreeForTeamA
  * @param view
- * Display 3
+ *
+ * Add 3 points to team A
  */
     public void addThreeForTeamA (View view) {
         scoreTeamA = scoreTeamA + 3;
 
         displayForTeamA(scoreTeamA);
+    }
+
+        /* ************************************ */
+        /*          SCORE TEAM B METHODS        */
+        /* ************************************ */
+
+/**
+ * addOneForTeamB
+ * @param view
+ *
+ * Add 1 point to team B
+ */
+    public void addOneForTeamB (View view) {
+        scoreTeamB = scoreTeamB + 1;
+
+        displayForTeamA(scoreTeamB);
+    }
+
+/**
+ * addTwoForTeamB
+ * @param view
+ *
+ * Add 2 points to team B
+ */
+    public void addTwoForTeamB (View view) {
+        scoreTeamB = scoreTeamB + 2;
+
+        displayForTeamA(scoreTeamB);
+    }
+
+/**
+ * addThreeForTeamB
+ * @param view
+ *
+ * Add 3 points to team B
+ */
+    public void addThreeForTeamB (View view) {
+        scoreTeamB = scoreTeamB + 3;
+
+        displayForTeamA(scoreTeamB);
     }
 }

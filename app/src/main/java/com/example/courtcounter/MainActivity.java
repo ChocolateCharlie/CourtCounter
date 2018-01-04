@@ -41,6 +41,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+/**
+ * resetScores
+ * @param view
+ *
+ * Reset both scoreTeamA and scoreTeamB to 0.
+ */
+    public void resetScores (View view) {
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
+
         /* ************************************ */
         /*          DISPLAY METHODS             */
         /* ************************************ */
